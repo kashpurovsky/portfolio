@@ -505,7 +505,7 @@ function renderStatic(){
   document.getElementById('teaserSideLbl').textContent = t(T.teaserSideLbl);
   document.getElementById('teaserSideList').innerHTML = t(T.about.skills).map(s=>`<li>${s}</li>`).join('');
   document.getElementById('teaserH').innerHTML = t(T.teaserH);
-  document.getElementById('teaserP').innerHTML = `<p>${t(T.teaserP)}</p>`;
+  document.getElementById('teaserP').innerHTML = t(T.about.txt).map(p=>`<p>${p}</p>`).join('');
   document.getElementById('teaserBtn').textContent = t(T.readMore);
   document.getElementById('ftrSideLbl').textContent = t(T.ftrSideLbl);
   document.getElementById('ftrRoles').innerHTML = t(T.ftrRoles).map(s=>`<li>${s}</li>`).join('');
